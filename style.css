@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border: 4px solid #ffca28;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 5px 0 #e64a19;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  background-color: #f4511e;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #e64a19;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: #f1f8e9;
+  border-radius: 10px;
+}
+
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.option-btn {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.option-btn:hover {
+  background-color: #0277bd;
+}
+
+.correct {
+  background-color: #2ecc71 !important;
+}
+
+.incorrect {
+  background-color: #e74c3c !important;
+}
+
+footer {
+  color: white;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+  }
+  .btn {
+    width: 100%;
+  }
+}
