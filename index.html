@@ -1,1 +1,56 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio dos Números - Matemática 6º Ano</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap&quot; rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>🧮 Desafio dos Números</h1>
+    <p>Aventura Matemática - 6º Ano</p>
+  </header>
+
+  <main class="container">
+    <!-- Tela Inicial -->
+    <section id="start-screen" class="card">
+      <h2>Pronto para desafiar sua mente?</h2>
+      <p>Resolva os problemas matemáticos, ganhe pontos e não perca suas vidas!</p>
+      <button id="start-btn" class="btn">Iniciar Desafio 🚀</button>
+    </section>
+
+    <!-- Tela do Jogo -->
+    <section id="quiz-screen" class="card hidden">
+      <div class="hud">
+        <div id="lives-container">Vidas: ❤️ ❤️ ❤️</div>
+        <div id="score-container">Pontos: <span id="score">0</span></div>
+      </div>
+
+      <div class="question-box">
+        <h3 id="question-title">Pergunta aqui...</h3>
+        <div id="options-container" class="options-grid">
+          <!-- Botões de opção gerados via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tela de Fim de Jogo -->
+    <section id="end-screen" class="card hidden">
+      <h2 id="end-title">Fim do Desafio!</h2>
+      <p id="end-message">Você fez X pontos!</p>
+      <button id="restart-btn" class="btn">Jogar Novamente 🔄</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto Integrador - Desenvolvimento Web Front-End 🎓</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
